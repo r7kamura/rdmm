@@ -1,3 +1,7 @@
+## 0.0.3
+
+- Fix broken `ItemResource#review_average`
+
 ## 0.0.2
 
 - Add `Rdmm::Responses::BaseResponse#total_count`

@@ -81,8 +81,8 @@ module Rdmm
       end
 
       # @return [Integer, nil]
-      def review_avarage
-        source["review"]["count"]
+      def review_average
+        source["review"]["average"]
       end
 
       # @return [Float, nil]

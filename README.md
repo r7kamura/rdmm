@@ -148,7 +148,7 @@ Available attributes:
 - `prices`
 - `product_id`
 - `released_at`
-- `review_avarage`
+- `review_average`
 - `review_count`
 - `series`
 - `service_code`
