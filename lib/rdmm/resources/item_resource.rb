@@ -1,9 +1,26 @@
+require "time"
+
 module Rdmm
   module Resources
     class ItemResource < BaseResource
+      # @return [Array]
+      def actresses
+        Array(source["iteminfo"]["actress"])
+      end
+
+      # @return [Array]
+      def actors
+        Array(source["iteminfo"]["actor"])
+      end
+
       # @return [String, nil]
       def affiliate_url
         source["affiliate_url"]
+      end
+
+      # @return [Array]
+      def authors
+        Array(source["iteminfo"]["author"])
       end
 
       # @return [String, nil]
@@ -16,6 +33,11 @@ module Rdmm
         source["content_id"]
       end
 
+      # @return [Array]
+      def directors
+        Array(source["iteminfo"]["director"])
+      end
+
       # @return [String, nil]
       def floor_code
         source["floor_code"]
@@ -26,9 +48,19 @@ module Rdmm
         source["floor_name"]
       end
 
-      # @return [Hash, nil]
-      def iteminfo
-        source["iteminfo"]
+      # @return [Array]
+      def genres
+        Array(source["iteminfo"]["genre"])
+      end
+
+      # @return [Array]
+      def labels
+        Array(source["iteminfo"]["label"])
+      end
+
+      # @return [Array]
+      def makers
+        Array(source["iteminfo"]["maker"])
       end
 
       # @return [Hash, nil]
@@ -48,9 +80,19 @@ module Rdmm
         end
       end
 
-      # @return [Hash, nil]
-      def review
-        source["review"]
+      # @return [Integer, nil]
+      def review_avarage
+        source["review"]["count"]
+      end
+
+      # @return [Float, nil]
+      def review_count
+        source["review"]["count"]
+      end
+
+      # @return [Array]
+      def series_list
+        Array(source["iteminfo"]["series"])
       end
 
       # @return [String, nil]
