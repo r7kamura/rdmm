@@ -18,14 +18,36 @@ module Rdmm
         resources.each(&block)
       end
 
+      # @return [Integer]
+      def first_position
+        body["result"]["first_position"]
+      end
+
+      # @return [Boolean]
+      def has_next_page?
+        first_position - 1 + result_count < total_count
+      end
+
       # @return [Faraday::Utils::Headers]
       def headers
         faraday_response.headers
       end
 
+      # @return [Integer, nil]
+      def next_page_offset
+        if has_next_page?
+          first_position + result_count
+        end
+      end
+
       # @return [Rdmm::Resources::BaseResource]
       def resources
         raise ::NotImplementedError
+      end
+
+      # @return [Integer]
+      def result_count
+        body["result"]["result_count"]
       end
 
       # @return [Integer]
@@ -35,7 +57,7 @@ module Rdmm
 
       # @return [Integer]
       def total_count
-        body["result"]["total_count"]
+        body["result"]["total_count"].to_i
       end
 
       private

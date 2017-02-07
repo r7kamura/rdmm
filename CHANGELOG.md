@@ -1,6 +1,11 @@
 ## 0.0.3
 
-- Fix broken `ItemResource#review_average`
+- Add `Rdmm::Responses::BaseResponse#first_position`
+- Add `Rdmm::Responses::BaseResponse#has_next_page?`
+- Add `Rdmm::Responses::BaseResponse#next_page_offset`
+- Add `Rdmm::Responses::BaseResponse#result_count`
+- Fix broken `Rdmm::Resources::ItemResource#review_average`
+- Cast `Rdmm::Responses::BaseResponse#total_count` from `String` to `Integer`
 
 ## 0.0.2
 
