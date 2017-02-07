@@ -31,10 +31,9 @@ module Rdmm
         options[:article_id]
       end
 
-      # @note a.k.a. content_id
       # @return [String, nil]
       def cid
-        options[:cid]
+        options[:content_id]
       end
 
       # @note floor code
