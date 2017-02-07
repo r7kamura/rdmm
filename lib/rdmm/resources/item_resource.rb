@@ -91,7 +91,7 @@ module Rdmm
       end
 
       # @return [Array]
-      def series_list
+      def series
         Array(source["iteminfo"]["series"])
       end
 

@@ -22,6 +22,8 @@ module Rdmm
 
       property :affiliate_id
       property :api_id
+      property :hits
+      property :offset
 
       # @param options [Hash]
       def initialize(options = {})
@@ -36,6 +38,16 @@ module Rdmm
       # @return [String]
       def api_id
         options[:api_id]
+      end
+
+      # @return [Integer, nil]
+      def hits
+        options[:hits]
+      end
+
+      # @return [Integer, nil]
+      def offset
+        options[:offset]
       end
 
       # @return [Hash]

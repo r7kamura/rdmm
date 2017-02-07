@@ -5,6 +5,7 @@ module Rdmm
   class Client
     BASE_URL = "https://api.dmm.com"
     PATH_TO_LIST_ITEMS = "/affiliate/v3/ItemList"
+    PATH_TO_LIST_SERIES = "/affiliate/v3/SeriesSearch"
 
     # @param affiliate_id [String]
     # @param api_id [String]
@@ -29,6 +30,15 @@ module Rdmm
       query = ::Rdmm::Queries::ListItemsQuery.new(query_options)
       faraday_response = get(PATH_TO_LIST_ITEMS, query.to_hash)
       ::Rdmm::Responses::ListItemsResponse.new(faraday_response)
+    end
+
+    # @param options [Hash]
+    # @return [Rdmm::Responses::ListSeriesResponse]
+    def list_series(options = {})
+      query_options = default_query_options.merge(options)
+      query = ::Rdmm::Queries::ListSeriesQuery.new(query_options)
+      faraday_response = get(PATH_TO_LIST_SERIES, query.to_hash)
+      ::Rdmm::Responses::ListSeriesResponse.new(faraday_response)
     end
 
     private

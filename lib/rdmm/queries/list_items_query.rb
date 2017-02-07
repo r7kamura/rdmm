@@ -6,11 +6,9 @@ module Rdmm
       property :cid
       property :floor
       property :gte_date
-      property :hits
       property :keyword
       property :lte_date
       property :mono_stock
-      property :offset
       property :service
       property :site
       property :sort
@@ -49,11 +47,6 @@ module Rdmm
         end
       end
 
-      # @return [Integer, nil]
-      def hits
-        options[:hits]
-      end
-
       # @return [String, nil]
       def keyword
         options[:keyword]
@@ -74,11 +67,6 @@ module Rdmm
       # @return [String, nil]
       def mono_stock
         options[:mono_stock]
-      end
-
-      # @return [Integer, nil]
-      def offset
-        options[:offset]
       end
 
       # @note service code

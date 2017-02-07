@@ -63,6 +63,21 @@ client.list_items(site: "DMM.com")
 
 `https://api.dmm.com/affiliate/v3/ItemList?affiliate_id=dummy&api_id=dummy&site=DMM.com`
 
+### Rdmm::Client#list_series
+
+Available options:
+
+- `:floor_id`
+- `:hits`
+- `:initial`
+- `:offset`
+
+```ruby
+client.list_series(floor_id: 27)
+```
+
+`https://api.dmm.com/affiliate/v3/SeriesSearch?affiliate_id=dummy&api_id=dummy&site=DMM.com&floor_id=27`
+
 ### Rdmm::Responses::BaseResponse#each
 
 This class implements `Enumerable` module.
@@ -135,7 +150,7 @@ Available attributes:
 - `released_at`
 - `review_avarage`
 - `review_count`
-- `series_list`
+- `series`
 - `service_code`
 - `service_name`
 - `title`
@@ -151,6 +166,28 @@ client.list_items(site: "DMM.com").first.title
 
 ```ruby
 "キングダム"
+```
+
+</details>
+
+### Rdmm::Resources::SeriesResource
+
+Available attributes:
+
+- `list_url`
+- `name`
+- `ruby`
+- `series_id`
+
+```ruby
+client.list_series(floor_id: 27).first.name
+```
+
+<details>
+<summary>output</summary>
+
+```ruby
+"二四〇九階の彼女"
 ```
 
 </details>
