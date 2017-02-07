@@ -76,7 +76,7 @@ Available options:
 client.list_series(floor_id: 27)
 ```
 
-`https://api.dmm.com/affiliate/v3/SeriesSearch?affiliate_id=dummy&api_id=dummy&site=DMM.com&floor_id=27`
+`https://api.dmm.com/affiliate/v3/SeriesSearch?affiliate_id=dummy&api_id=dummy&floor_id=27`
 
 ### Rdmm::Responses::BaseResponse#each
 
