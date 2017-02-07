@@ -63,9 +63,9 @@ client.list_items(site: "DMM.com")
 
 `https://api.dmm.com/affiliate/v3/ItemList?affiliate_id=dummy&api_id=dummy&site=DMM.com`
 
-### Rdmm::Responses::BaseResponse
+### Rdmm::Responses::BaseResponse#each
 
-Implements `Enumerable` module.
+This class implements `Enumerable` module.
 
 ```ruby
 client.list_items(site: "DMM.com").map(&:title)
@@ -95,6 +95,21 @@ client.list_items(site: "DMM.com").map(&:title)
  "VOICEROID＋ 結月ゆかり EX ダウンロード版",
  "映画 闇金ウシジマくんthe Final",
  "トレーディングブロマイド 25枚セット 舞台『刀剣乱舞』虚伝 燃ゆる本能寺（再演）"]
+```
+
+</details>
+
+### Rdmm::Responses::BaseResponse#total_count
+
+```ruby
+client.list_items(site: "DMM.com").total_count
+```
+
+<details>
+<summary>output</summary>
+
+```ruby
+50000
 ```
 
 </details>
