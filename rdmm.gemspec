@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["r7kamura@gmail.com"]
   spec.summary       = "An API Client library for DMM written in Ruby."
   spec.homepage      = "https://github.com/r7kamura/rdmm"
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
