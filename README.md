@@ -11,7 +11,7 @@ An API Client library for DMM written in Ruby.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "syoboi_calendar"
+gem "rdmm"
 ```
 
 And then execute:
@@ -23,5 +23,5 @@ bundle
 Or install it yourself as:
 
 ```bash
-gem install syoboi_calendar
+gem install rdmm
 ```
