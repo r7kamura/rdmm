@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Declare required ruby version on gemspec
+
 ## 0.0.3
 
 - Add `Rdmm::Responses::BaseResponse#first_position`
