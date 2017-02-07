@@ -114,6 +114,51 @@ client.list_items(site: "DMM.com").map(&:title)
 
 </details>
 
+### Rdmm::Responses::BaseResponse#first_position
+
+```ruby
+client.list_items(site: "DMM.com").first_position
+```
+
+<details>
+<summary>output</summary>
+
+```ruby
+1
+```
+
+</details>
+
+### Rdmm::Responses::BaseResponse#has_next_page?
+
+```ruby
+client.list_items(site: "DMM.com").has_next_page?
+```
+
+<details>
+<summary>output</summary>
+
+```ruby
+true
+```
+
+</details>
+
+### Rdmm::Responses::BaseResponse#result_count
+
+```ruby
+client.list_items(site: "DMM.com").result_count
+```
+
+<details>
+<summary>output</summary>
+
+```ruby
+20
+```
+
+</details>
+
 ### Rdmm::Responses::BaseResponse#total_count
 
 ```ruby
