@@ -63,6 +63,42 @@ client.list_items(site: "DMM.com")
 
 `https://api.dmm.com/affiliate/v3/ItemList?affiliate_id=dummy&api_id=dummy&site=DMM.com`
 
+### Rdmm::Responses::BaseResponse
+
+Implements `Enumerable` module.
+
+```ruby
+client.list_items(site: "DMM.com").map(&:title)
+```
+
+<details>
+<summary>output</summary>
+
+```ruby
+["キングダム",
+ "ハドソン川の奇跡",
+ "ミュージカル『刀剣乱舞』 〜真剣乱舞祭 2016〜",
+ "back number/アンコール",
+ "パンフレット 舞台『刀剣乱舞』虚伝 燃ゆる本能寺（再演）",
+ "終末のハーレム セミカラー版",
+ "VOICEROID＋ 東北きりたん EX ダウンロード版",
+ "CHAOS；CHILD",
+ "【8〜14泊】Travel house 軽量 TSAロック付き 4輪 93L スーツケース レッド",
+ "ミュージカル『刀剣乱舞』真剣乱舞祭 2016 （ブルーレイディスク）",
+ "シン・ゴジラ",
+ "東京タラレバ娘",
+ "舞台『刀剣乱舞』虚伝 燃ゆる本能寺 〜再演〜",
+ "キングダム",
+ "宇多田ヒカル/Fantome（SHM-CD）",
+ "エルダー・スクロールズ・オンライン 日本語版 （インペリアルエディション）",
+ "自炊・電子書籍化キット プラス裁断機PK-513L＆ScanSnap iX500 FI-IX500A",
+ "VOICEROID＋ 結月ゆかり EX ダウンロード版",
+ "映画 闇金ウシジマくんthe Final",
+ "トレーディングブロマイド 25枚セット 舞台『刀剣乱舞』虚伝 燃ゆる本能寺（再演）"]
+```
+
+</details>
+
 ### Rdmm::Resources::ItemResource
 
 Available attributes:
