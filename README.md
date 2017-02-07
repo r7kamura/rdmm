@@ -25,3 +25,20 @@ Or install it yourself as:
 ```bash
 gem install rdmm
 ```
+
+## Usage
+
+### Rdmm::Client.new
+
+```ruby
+require "rdmm"
+client = Rdmm::Client.new(affiliate_id: "dummy", api_id: "dummy")
+```
+
+### Rdmm::Client#list_items
+
+`https://api.dmm.com/affiliate/v3/ItemList?affiliate_id=dummy&api_id=dummy&site=DMM.com`
+
+```ruby
+client.list_items(site: "DMM.com")
+```
