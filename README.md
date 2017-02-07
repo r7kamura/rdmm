@@ -1,5 +1,9 @@
 # Rdmm
 
+[![CircleCI](https://img.shields.io/circleci/project/github/r7kamura/rdmm.svg)](https://circleci.com/gh/r7kamura/rdmm)
+[![Gem Version](https://badge.fury.io/rb/rdmm.svg)](https://rubygems.org/gems/rdmm)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/rdmm)
+
 An API Client library for DMM written in Ruby.
 
 ## Requirements
