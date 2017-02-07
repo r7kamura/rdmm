@@ -33,6 +33,11 @@ module Rdmm
         faraday_response.status
       end
 
+      # @return [Integer]
+      def total_count
+        body["result"]["total_count"]
+      end
+
       private
 
       # @return [Faraday::Response]
