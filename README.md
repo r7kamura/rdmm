@@ -347,7 +347,7 @@ Available attributes:
 
 Available attributes:
 
+- `id`
 - `list_url`
 - `name`
 - `ruby`
-- `series_id`

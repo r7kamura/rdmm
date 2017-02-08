@@ -5,6 +5,7 @@
 - Add `Rdmm::Client#list_floors`
 - Add `Rdmm::Client#list_genres`
 - Add `Rdmm::Client#list_makers`
+- Rename `#series_id` to `#id` on `Rdmm::Resources::SeriesResource`
 
 ## 0.0.4
 
