@@ -1,3 +1,11 @@
+## 0.1.0
+
+- Add `Rdmm::Client#list_actresses`
+- Add `Rdmm::Client#list_authors`
+- Add `Rdmm::Client#list_floors`
+- Add `Rdmm::Client#list_genres`
+- Add `Rdmm::Client#list_makers`
+
 ## 0.0.4
 
 - Declare required ruby version on gemspec

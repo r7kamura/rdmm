@@ -41,6 +41,66 @@ require "rdmm"
 client = Rdmm::Client.new(affiliate_id: "dummy", api_id: "dummy")
 ```
 
+### Rdmm::Client#list_actresses
+
+Available options:
+
+- `:actress_id`
+- `:birthday`
+- `:bust`
+- `:height`
+- `:hip`
+- `:hits`
+- `:initial`
+- `:keyword`
+- `:offset`
+- `:sort`
+- `:waist`
+
+```ruby
+client.list_actresses
+```
+
+`https://api.dmm.com/affiliate/v3/ActressSearch?affiliate_id=dummy&api_id=dummy`
+
+### Rdmm::Client#list_authors
+
+Available options:
+
+- `:floor_id`
+- `:hits`
+- `:initial`
+- `:offset`
+
+```ruby
+client.list_authors(floor_id: 27)
+```
+
+`https://api.dmm.com/affiliate/v3/AuthorSearch?affiliate_id=dummy&api_id=dummy&floor_id=27`
+
+### Rdmm::Client#list_floors
+
+```ruby
+client.list_floors
+```
+
+`https://api.dmm.com/affiliate/v3/FloorList?affiliate_id=dummy&api_id=dummy`
+
+### Rdmm::Client#list_genres
+
+Available options:
+
+- `:floor_id`
+- `:hits`
+- `:initial`
+- `:offset`
+
+```ruby
+client.list_genres(floor_id: 27)
+```
+
+`https://api.dmm.com/affiliate/v3/GenreSearch?affiliate_id=dummy&api_id=dummy&floor_id=27`
+
 ### Rdmm::Client#list_items
 
 Available options:
@@ -64,6 +124,21 @@ client.list_items(site: "DMM.com")
 ```
 
 `https://api.dmm.com/affiliate/v3/ItemList?affiliate_id=dummy&api_id=dummy&site=DMM.com`
+
+### Rdmm::Client#list_makers
+
+Available options:
+
+- `:floor_id`
+- `:hits`
+- `:initial`
+- `:offset`
+
+```ruby
+client.list_makers(floor_id: 27)
+```
+
+`https://api.dmm.com/affiliate/v3/MakerSearch?affiliate_id=dummy&api_id=dummy&floor_id=27`
 
 ### Rdmm::Client#list_series
 
@@ -176,6 +251,60 @@ client.list_items(site: "DMM.com").total_count
 
 </details>
 
+### Rdmm::Resources::ActressResource
+
+Available attributes:
+
+- `birthday`
+- `blood_type`
+- `bust`
+- `cup`
+- `height`
+- `hobbies`
+- `id`
+- `image_url_large`
+- `image_url_small`
+- `list_url_digital`
+- `list_url_mono`
+- `list_url_monthly`
+- `list_url_ppm`
+- `list_url_rental`
+- `name`
+- `prefectures`
+- `ruby`
+- `waist`
+
+### Rdmm::Resources::AuthorResource
+
+Available attributes:
+
+- `another_name`
+- `author_id`
+- `list_url`
+- `name`
+- `ruby`
+
+### Rdmm::Resources::FloorResource
+
+Available attributes:
+
+- `code`
+- `id`
+- `name`
+- `service_code`
+- `service_name`
+- `site_code`
+- `site_name`
+
+### Rdmm::Resources::GenreResource
+
+Available attributes:
+
+- `genre_id`
+- `list_url`
+- `name`
+- `ruby`
+
 ### Rdmm::Resources::ItemResource
 
 Available attributes:
@@ -204,18 +333,15 @@ Available attributes:
 - `url`
 - `volume`
 
-```ruby
-client.list_items(site: "DMM.com").first.title
-```
+### Rdmm::Resources::MakerResource
 
-<details>
-<summary>output</summary>
+Available attributes:
 
-```ruby
-"キングダム"
-```
+- `list_url`
+- `maker_id`
+- `name`
+- `ruby`
 
-</details>
 
 ### Rdmm::Resources::SeriesResource
 
@@ -225,16 +351,3 @@ Available attributes:
 - `name`
 - `ruby`
 - `series_id`
-
-```ruby
-client.list_series(floor_id: 27).first.name
-```
-
-<details>
-<summary>output</summary>
-
-```ruby
-"二四〇九階の彼女"
-```
-
-</details>

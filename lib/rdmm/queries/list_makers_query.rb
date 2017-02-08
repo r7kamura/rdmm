@@ -1,6 +1,6 @@
 module Rdmm
   module Queries
-    class ListSeriesQuery < BaseQuery
+    class ListMakersQuery < BaseQuery
       property :floor_id
       property :hits
       property :initial
