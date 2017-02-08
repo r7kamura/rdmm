@@ -337,8 +337,8 @@ Available attributes:
 
 Available attributes:
 
+- `id`
 - `list_url`
-- `maker_id`
 - `name`
 - `ruby`
 
