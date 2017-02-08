@@ -2,7 +2,7 @@ module Rdmm
   module Resources
     class GenreResource < BaseResource
       # @return [Integer, nil]
-      def genre_id
+      def id
         source["genre_id"]
       end
 

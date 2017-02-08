@@ -300,7 +300,7 @@ Available attributes:
 
 Available attributes:
 
-- `genre_id`
+- `id`
 - `list_url`
 - `name`
 - `ruby`
