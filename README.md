@@ -46,16 +46,21 @@ client = Rdmm::Client.new(affiliate_id: "dummy", api_id: "dummy")
 Available options:
 
 - `:id`
-- `:birthday`
-- `:bust`
-- `:height`
-- `:hip`
+- `:birthday_from`
+- `:birthday_to`
+- `:bust_from`
+- `:bust_to`
+- `:height_from`
+- `:height_to`
+- `:hip_from`
+- `:hip_to`
 - `:hits`
 - `:initial`
 - `:keyword`
 - `:offset`
 - `:sort`
-- `:waist`
+- `:waist_from`
+- `:waist_to`
 
 ```ruby
 client.list_actresses
