@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Rdmm::VERSION
   spec.authors       = ["Ryo Nakamura"]
   spec.email         = ["r7kamura@gmail.com"]
-  spec.summary       = "An API Client library for DMM written in Ruby."
+  spec.summary       = "An API Client library for DMM Web Service written in Ruby."
   spec.homepage      = "https://github.com/r7kamura/rdmm"
   spec.license       = "MIT"
 

@@ -4,7 +4,9 @@
 [![Gem Version](https://badge.fury.io/rb/rdmm.svg)](https://rubygems.org/gems/rdmm)
 [![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/r7kamura/rdmm)
 
-An API Client library for DMM written in Ruby.
+An API Client library for DMM Web Service written in Ruby.
+
+See https://affiliate.dmm.com/api/ for more details about DMM Web Service.
 
 ## Requirements
 
