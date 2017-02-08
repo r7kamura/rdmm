@@ -7,7 +7,7 @@ module Rdmm
       end
 
       # @return [Integer, nil]
-      def author_id
+      def id
         source["author_id"]
       end
 

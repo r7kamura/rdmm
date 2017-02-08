@@ -279,7 +279,7 @@ Available attributes:
 Available attributes:
 
 - `another_name`
-- `author_id`
+- `id`
 - `list_url`
 - `name`
 - `ruby`
