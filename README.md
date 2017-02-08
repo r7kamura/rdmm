@@ -45,7 +45,7 @@ client = Rdmm::Client.new(affiliate_id: "dummy", api_id: "dummy")
 
 Available options:
 
-- `:actress_id`
+- `:id`
 - `:birthday`
 - `:bust`
 - `:height`

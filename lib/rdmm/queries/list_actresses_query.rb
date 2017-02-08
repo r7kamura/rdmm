@@ -15,7 +15,7 @@ module Rdmm
 
     # @return [Integer, nil]
       def actress_id
-        options[:actress_id]
+        options[:id]
       end
 
       # @return [String, nil]
