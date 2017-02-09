@@ -13,11 +13,6 @@ module Rdmm
         Array(source["iteminfo"]["actor"])
       end
 
-      # @return [String, nil]
-      def affiliate_url
-        source["affiliateURL"]
-      end
-
       # @return [Array]
       def authors
         Array(source["iteminfo"]["author"])
@@ -113,6 +108,11 @@ module Rdmm
       # @return [String, nil]
       def url
         source["URL"]
+      end
+
+      # @return [String, nil]
+      def url_affiliate
+        source["affiliateURL"]
       end
 
       # @return [Integer, nil]

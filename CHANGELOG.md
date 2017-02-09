@@ -2,6 +2,7 @@
 
 - Fix bug on `Rdmm::Resources::ItemResource#affiliate_url`
 - Fix bug on `Rdmm::Resources::ItemResource#url`
+- Rename `#affiliate_url` to `#url_affiliate` on `Rdmm::Resources::ItemResource`
 
 ## 0.2.0
 
