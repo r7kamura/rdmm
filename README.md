@@ -179,99 +179,99 @@ Available methods:
 
 Available attributes:
 
-- `birthday`
-- `blood_type`
-- `bust`
-- `cup`
-- `height`
-- `hobbies`
-- `id`
-- `image_url_large`
-- `image_url_small`
-- `list_url_digital`
-- `list_url_mono`
-- `list_url_monthly`
-- `list_url_ppm`
-- `list_url_rental`
-- `name`
-- `prefectures`
-- `ruby`
-- `waist`
+- `#birthday`
+- `#blood_type`
+- `#bust`
+- `#cup`
+- `#height`
+- `#hobbies`
+- `#id`
+- `#image_url_large`
+- `#image_url_small`
+- `#list_url_digital`
+- `#list_url_mono`
+- `#list_url_monthly`
+- `#list_url_ppm`
+- `#list_url_rental`
+- `#name`
+- `#prefectures`
+- `#ruby`
+- `#waist`
 
 ### Rdmm::Resources::AuthorResource
 
 Available attributes:
 
-- `another_name`
-- `id`
-- `list_url`
-- `name`
-- `ruby`
+- `#another_name`
+- `#id`
+- `#list_url`
+- `#name`
+- `#ruby`
 
 ### Rdmm::Resources::FloorResource
 
 Available attributes:
 
-- `code`
-- `id`
-- `name`
-- `service_code`
-- `service_name`
-- `site_code`
-- `site_name`
+- `#code`
+- `#id`
+- `#name`
+- `#service_code`
+- `#service_name`
+- `#site_code`
+- `#site_name`
 
 ### Rdmm::Resources::GenreResource
 
 Available attributes:
 
-- `id`
-- `list_url`
-- `name`
-- `ruby`
+- `#id`
+- `#list_url`
+- `#name`
+- `#ruby`
 
 ### Rdmm::Resources::ItemResource
 
 Available attributes:
 
-- `actors`
-- `actresses`
-- `affiliate_url`
-- `authors`
-- `category_name`
-- `content_id`
-- `directors`
-- `floor_code`
-- `floor_name`
-- `genres`
-- `labels`
-- `makers`
-- `prices`
-- `product_id`
-- `released_at`
-- `review_average`
-- `review_count`
-- `series`
-- `service_code`
-- `service_name`
-- `title`
-- `url`
-- `volume`
+- `#actors`
+- `#actresses`
+- `#affiliate_url`
+- `#authors`
+- `#category_name`
+- `#content_id`
+- `#directors`
+- `#floor_code`
+- `#floor_name`
+- `#genres`
+- `#labels`
+- `#makers`
+- `#prices`
+- `#product_id`
+- `#released_at`
+- `#review_average`
+- `#review_count`
+- `#series`
+- `#service_code`
+- `#service_name`
+- `#title`
+- `#url`
+- `#volume`
 
 ### Rdmm::Resources::MakerResource
 
 Available attributes:
 
-- `id`
-- `list_url`
-- `name`
-- `ruby`
+- `#id`
+- `#list_url`
+- `#name`
+- `#ruby`
 
 
 ### Rdmm::Resources::SeriesResource
 
 Available attributes:
 
-- `id`
-- `list_url`
-- `name`
-- `ruby`
+- `#id`
+- `#list_url`
+- `#name`
+- `#ruby`
