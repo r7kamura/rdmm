@@ -15,7 +15,7 @@ module Rdmm
 
       # @return [String, nil]
       def affiliate_url
-        source["affiliate_url"]
+        source["affiliateURL"]
       end
 
       # @return [Array]

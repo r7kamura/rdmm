@@ -1,5 +1,6 @@
 ## 0.2.1
 
+- Fix bug on `Rdmm::Resources::ItemResource#affiliate_url`
 - Fix bug on `Rdmm::Resources::ItemResource#url`
 
 ## 0.2.0
