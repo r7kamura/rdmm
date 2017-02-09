@@ -36,10 +36,9 @@ module Rdmm
         options[:content_id]
       end
 
-      # @note floor code
       # @return [String, nil]
       def floor
-        options[:floor]
+        options[:floor_code]
       end
 
       # @return [String, nil]
@@ -81,10 +80,9 @@ module Rdmm
         options[:offset]
       end
 
-      # @note service code
       # @return [String, nil]
       def service
-        options[:service]
+        options[:service_code]
       end
 
       # @note One of the following values:

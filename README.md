@@ -113,14 +113,14 @@ Available options:
 - `:article`
 - `:article_id`
 - `:content_id`
-- `:floor`
+- `:floor_code`
 - `:hits`
 - `:keyword`
 - `:mono_stock`
 - `:offset`
 - `:released_from`
 - `:released_to`
-- `:service`
+- `:service_code`
 - `:site`
 - `:sort`
 

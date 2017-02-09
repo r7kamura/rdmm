@@ -1,3 +1,8 @@
+## 0.2.0
+
+- Rename `:floor` to `:floor_code` on `Rdmm::Client#list_items`
+- Rename `:service` to `:service_code` on `Rdmm::Client#list_items`
+
 ## 0.1.0
 
 - Add `Rdmm::Client#list_actresses`
