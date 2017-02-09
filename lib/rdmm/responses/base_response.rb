@@ -40,7 +40,7 @@ module Rdmm
         end
       end
 
-      # @return [Rdmm::Resources::BaseResource]
+      # @return [Array<Rdmm::Resources::BaseResource>]
       def resources
         raise ::NotImplementedError
       end
