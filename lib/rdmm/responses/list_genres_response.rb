@@ -1,11 +1,16 @@
 module Rdmm
   module Responses
     class ListGenresResponse < BaseResponse
+      private
+
       # @note Override
-      def resources
-        body["result"]["genre"].map do |source|
-          ::Rdmm::Resources::GenreResource.new(source)
-        end
+      def resource_class
+        ::Rdmm::Resources::GenreResource
+      end
+
+      # @note Override
+      def sources
+        body["result"]["genre"]
       end
     end
   end

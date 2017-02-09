@@ -18,6 +18,16 @@ module Rdmm
         resources.each(&block)
       end
 
+      # @return [Hash, nil]
+      def errors
+        body["result"]["errors"]
+      end
+
+      # @return [Boolean]
+      def has_error?
+        status != 200
+      end
+
       # @return [Integer]
       def first_position
         body["result"]["first_position"]
@@ -33,6 +43,11 @@ module Rdmm
         faraday_response.headers
       end
 
+      # @return [String, nil]
+      def message
+        body["result"]["message"]
+      end
+
       # @return [Integer, nil]
       def next_page_offset
         if has_next_page?
@@ -42,7 +57,9 @@ module Rdmm
 
       # @return [Array<Rdmm::Resources::BaseResource>]
       def resources
-        raise ::NotImplementedError
+        (sources || []).map do |source|
+          resource_class.new(source)
+        end
       end
 
       # @return [Integer]
@@ -62,9 +79,22 @@ module Rdmm
 
       private
 
+      # @private
       # @return [Faraday::Response]
       def faraday_response
         @faraday_response
+      end
+
+      # @private
+      # @return [Class]
+      def resource_class
+        raise ::NotImplementedError
+      end
+
+      # @private
+      # @return [Array<Hash>, nil]
+      def sources
+        raise ::NotImplementedError
       end
     end
   end

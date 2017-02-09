@@ -166,9 +166,12 @@ Available methods:
 
 - `#body`
 - `#each`
+- `#errors`
 - `#first_position`
+- `#has_error?`
 - `#has_next_page?`
 - `#headers`
+- `#message`
 - `#next_page_offset`
 - `#resources`
 - `#result_count`

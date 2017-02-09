@@ -1,11 +1,16 @@
 module Rdmm
   module Responses
     class ListItemsResponse < BaseResponse
+      private
+
       # @note Override
-      def resources
-        body["result"]["items"].map do |source|
-          ::Rdmm::Resources::ItemResource.new(source)
-        end
+      def resource_class
+        ::Rdmm::Resources::ItemResource
+      end
+
+      # @note Override
+      def sources
+        body["result"]["items"]
       end
     end
   end

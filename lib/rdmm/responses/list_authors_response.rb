@@ -1,11 +1,16 @@
 module Rdmm
   module Responses
     class ListAuthorsResponse < BaseResponse
+      private
+
       # @note Override
-      def resources
-        (body["result"]["author"] || []).map do |source|
-          ::Rdmm::Resources::AuthorResource.new(source)
-        end
+      def resource_class
+        ::Rdmm::Resources::AuthorResource
+      end
+
+      # @note Override
+      def sources
+        body["result"]["author"]
       end
     end
   end
