@@ -180,7 +180,7 @@ Available methods:
 
 ### Rdmm::Resources::ActressResource
 
-Available attributes:
+Available methods:
 
 - `#birthday`
 - `#blood_type`
@@ -203,7 +203,7 @@ Available attributes:
 
 ### Rdmm::Resources::AuthorResource
 
-Available attributes:
+Available methods:
 
 - `#another_name`
 - `#id`
@@ -213,7 +213,7 @@ Available attributes:
 
 ### Rdmm::Resources::FloorResource
 
-Available attributes:
+Available methods:
 
 - `#code`
 - `#id`
@@ -225,7 +225,7 @@ Available attributes:
 
 ### Rdmm::Resources::GenreResource
 
-Available attributes:
+Available methods:
 
 - `#id`
 - `#list_url`
@@ -234,7 +234,7 @@ Available attributes:
 
 ### Rdmm::Resources::ItemResource
 
-Available attributes:
+Available methods:
 
 - `#actors`
 - `#actresses`
@@ -286,7 +286,7 @@ Available attributes:
 
 ### Rdmm::Resources::MakerResource
 
-Available attributes:
+Available methods:
 
 - `#id`
 - `#list_url`
@@ -296,7 +296,7 @@ Available attributes:
 
 ### Rdmm::Resources::SeriesResource
 
-Available attributes:
+Available methods:
 
 - `#id`
 - `#list_url`
