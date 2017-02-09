@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Fix bug on `Rdmm::Resources::ItemResource#url`
+
 ## 0.2.0
 
 - Add some methods to `Rdmm::Responses::BaseResponse` for error handling

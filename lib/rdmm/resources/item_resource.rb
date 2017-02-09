@@ -112,7 +112,7 @@ module Rdmm
 
       # @return [String, nil]
       def url
-        source["url"]
+        source["URL"]
       end
 
       # @return [Integer, nil]
