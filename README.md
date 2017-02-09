@@ -160,101 +160,20 @@ client.list_series(floor_id: 27)
 
 `https://api.dmm.com/affiliate/v3/SeriesSearch?affiliate_id=dummy&api_id=dummy&floor_id=27`
 
-### Rdmm::Responses::BaseResponse#each
+### Rdmm::Responses::BaseResponse
 
-This class implements `Enumerable` module.
+Available methods:
 
-```ruby
-client.list_items(site: "DMM.com").map(&:title)
-```
-
-<details>
-<summary>output</summary>
-
-```ruby
-["キングダム",
- "ハドソン川の奇跡",
- "ミュージカル『刀剣乱舞』 〜真剣乱舞祭 2016〜",
- "back number/アンコール",
- "パンフレット 舞台『刀剣乱舞』虚伝 燃ゆる本能寺（再演）",
- "終末のハーレム セミカラー版",
- "VOICEROID＋ 東北きりたん EX ダウンロード版",
- "CHAOS；CHILD",
- "【8〜14泊】Travel house 軽量 TSAロック付き 4輪 93L スーツケース レッド",
- "ミュージカル『刀剣乱舞』真剣乱舞祭 2016 （ブルーレイディスク）",
- "シン・ゴジラ",
- "東京タラレバ娘",
- "舞台『刀剣乱舞』虚伝 燃ゆる本能寺 〜再演〜",
- "キングダム",
- "宇多田ヒカル/Fantome（SHM-CD）",
- "エルダー・スクロールズ・オンライン 日本語版 （インペリアルエディション）",
- "自炊・電子書籍化キット プラス裁断機PK-513L＆ScanSnap iX500 FI-IX500A",
- "VOICEROID＋ 結月ゆかり EX ダウンロード版",
- "映画 闇金ウシジマくんthe Final",
- "トレーディングブロマイド 25枚セット 舞台『刀剣乱舞』虚伝 燃ゆる本能寺（再演）"]
-```
-
-</details>
-
-### Rdmm::Responses::BaseResponse#first_position
-
-```ruby
-client.list_items(site: "DMM.com").first_position
-```
-
-<details>
-<summary>output</summary>
-
-```ruby
-1
-```
-
-</details>
-
-### Rdmm::Responses::BaseResponse#has_next_page?
-
-```ruby
-client.list_items(site: "DMM.com").has_next_page?
-```
-
-<details>
-<summary>output</summary>
-
-```ruby
-true
-```
-
-</details>
-
-### Rdmm::Responses::BaseResponse#result_count
-
-```ruby
-client.list_items(site: "DMM.com").result_count
-```
-
-<details>
-<summary>output</summary>
-
-```ruby
-20
-```
-
-</details>
-
-### Rdmm::Responses::BaseResponse#total_count
-
-```ruby
-client.list_items(site: "DMM.com").total_count
-```
-
-<details>
-<summary>output</summary>
-
-```ruby
-50000
-```
-
-</details>
+- `#body`
+- `#each`
+- `#first_position`
+- `#has_next_page?`
+- `#headers`
+- `#next_page_offset`
+- `#resources`
+- `#result_count`
+- `#status`
+- `#total_count`
 
 ### Rdmm::Resources::ActressResource
 
