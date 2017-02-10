@@ -256,8 +256,8 @@ Available methods:
 - `#makers`
 - `#number`
 - `#price`
-- `#price`
 - `#price_deliveries`
+- `#price_proper`
 - `#product_id`
 - `#released_at`
 - `#review_average`

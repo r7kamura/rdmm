@@ -124,7 +124,7 @@ module Rdmm
 
       # @note May not be a Integer
       # @return [Integer, nil]
-      def price
+      def price_proper
         if source["prices"]
           source["prices"]["proper"]
         end

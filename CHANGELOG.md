@@ -1,3 +1,7 @@
+## Unreleased
+
+- Fix bug on `Rdmm::Resources::ItemReosurce#price`
+
 ## 0.2.1
 
 - Fix bug on `Rdmm::Resources::ItemResource#affiliate_url`
