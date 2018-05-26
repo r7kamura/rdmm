@@ -22,8 +22,8 @@ module Rdmm
     # @return [Faraday::Connection]
     def connection
       @connection ||= ::Faraday::Connection.new(url: BASE_URL) do |connection|
-        connection.adapter :net_http
         connection.response :json
+        connection.adapter :net_http
       end
     end
 
