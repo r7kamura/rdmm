@@ -1,6 +1,7 @@
-## Unreleased
+## 0.2.2
 
 - Fix bug on `Rdmm::Resources::ItemReosurce#price`
+- Fix a warning that relates Faraday's middleware
 
 ## 0.2.1
 
